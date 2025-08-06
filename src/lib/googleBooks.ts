@@ -1,7 +1,7 @@
 async function searchBooks(query: string) {
   const url = `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(
     query,
-  )}&maxResults=5&key=${process.env.GOOGLE_API_KEY}`;
+  )}&maxResults=1&key=${process.env.GOOGLE_API_KEY}`;
   console.log(process.env.GOOGLE_API_KEY);
   console.log(url);
   const res = await fetch(url);

@@ -24,11 +24,14 @@
     "typescript": "^5.9.2"
   },
   "dependencies": {
+    "@langchain/community": "^0.3.49",
+    "@langchain/core": "^0.3.66",
     "@langchain/langgraph": "^0.4.3",
+    "@langchain/openai": "^0.6.3",
     "dotenv": "^17.2.1",
-    "langchain": "^0.3.30",
     "node-fetch": "3",
     "openai": "^5.12.0",
-    "stripe": "^18.4.0"
+    "stripe": "^18.4.0",
+    "zod": "^4.0.15"
   }
 }
