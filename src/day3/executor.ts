@@ -147,3 +147,5 @@ const res = await agentExecutor.invoke({
 // ..."
 
 console.log('Agent Response:', res);
+
+export { agentExecutor };
