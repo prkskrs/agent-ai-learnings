@@ -11,6 +11,8 @@
     "day3": "node --loader ts-node/esm src/day3/executor.ts",
     "day4": "node --loader ts-node/esm src/day4/graph.ts",
     "day5": "node --loader ts-node/esm src/day5/graphWithMemory.ts",
+    "day5:test": "node --loader ts-node/esm src/day5/testMemory.ts",
+    "day5:scalable": "node --loader ts-node/esm src/day5/testScalableMemory.ts",
     "day7": "node --loader ts-node/esm src/day7/heliconeBench.ts",
     "dev:watch": "nodemon --exec \"node --loader ts-node/esm\" src/index.ts"
   },
