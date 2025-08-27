@@ -1,4 +1,4 @@
-# Agentic AI, Step by Step (Week 1)
+# Agentic AI
 
 Make smart AI agents, one small step each day. This repo is your simple guide from a single API call to scalable, memory-powered agent workflows.
 
