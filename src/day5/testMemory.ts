@@ -7,7 +7,6 @@
 import { agentGraphWithMemory } from './graphWithMemory.js';
 
 async function testMemory() {
-  console.log('🧠 qiwjeqioejqoiwe');
   console.log('🧠 Testing Day 5: Memory + Retry\n');
 
   // First interaction - agent has no memory yet

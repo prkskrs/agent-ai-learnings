@@ -9,9 +9,9 @@ dotenv.config();
 async function searchBooks(query: string) {
   const url = `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(
     query,
-  )}&maxResults=5&key=${process.env.GOOGLE_API_KEY}`;
-  console.log(process.env.GOOGLE_API_KEY);
-  console.log(url);
+  )}&maxResults=5${
+    process.env.GOOGLE_API_KEY ? `&key=${process.env.GOOGLE_API_KEY}` : ''
+  }`;
   const res = await fetch(url);
   const data = (await res.json()) as {
     items: {

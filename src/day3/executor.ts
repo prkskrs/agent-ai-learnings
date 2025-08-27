@@ -51,10 +51,16 @@ const refundTool = tool(
     const { paymentIntentId } = input as { paymentIntentId: string };
     console.log('input: ', { paymentIntentId });
 
+    const apiKey = process.env.STRIPE_API_KEY;
+    if (!apiKey) {
+      return JSON.stringify({
+        error:
+          'Stripe is not configured. Set STRIPE_API_KEY to enable refunds.',
+      });
+    }
+
     // Initialize Stripe with API key from environment variables
-    const stripe = new Stripe(process.env.STRIPE_API_KEY!, {
-      apiVersion: '2025-07-30.basil',
-    });
+    const stripe = new Stripe(apiKey);
 
     console.log('paymentIntentId: ', paymentIntentId);
 
